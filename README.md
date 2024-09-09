@@ -1,5 +1,5 @@
 # Digit-Detection-CNN
-Convolution neural network used to detect hand written digits (0-9)
+Convolutional neural network used to detect hand written digits (0-9)
 
 # Set up
 To run create a python virtual enviornment with all dependacies:
