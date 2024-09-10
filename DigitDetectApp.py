@@ -90,7 +90,7 @@ def clear():
 
 # Create the window
 window = tk.Tk()
-window.title("Interactive Drag and Draw (Grayscale, 28x28)")
+window.title("Digit Detection CNN App")
 
 
 frame = tk.Frame(window)
