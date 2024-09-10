@@ -90,7 +90,7 @@ def clear():
 
 # Create the window
 window = tk.Tk()
-window.title("Digit Detection CNN App")
+window.title("Digit Recognition CNN App")
 
 
 frame = tk.Frame(window)
