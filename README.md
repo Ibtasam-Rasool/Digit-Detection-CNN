@@ -1,4 +1,4 @@
-# Digit-Detection-CNN
+# Digit-Recognition-CNN
 Convolutional neural network used to detect hand written digits (0-9)
 
 # Set up
