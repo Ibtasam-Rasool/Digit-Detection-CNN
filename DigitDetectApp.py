@@ -83,10 +83,13 @@ def predict_digit():
 
 def clear():
     canvas.delete("all")
+    predict_value.config(text=f"Draw Again", font=("Arial", 18))
     global img, draw_img
     img = Image.new("L", (canvas_width, canvas_height), color="black")
     draw_img = ImageDraw.Draw(img)
     
+def pen_touch(event):
+    predict_digit()
 
 # Create the window
 window = tk.Tk()
@@ -101,16 +104,17 @@ canvas = tk.Canvas(frame, width=canvas_width, height=canvas_height, bg="black")
 canvas.grid(row=0, column=0)  
 
 
-predict_value = tk.Label(frame, text=f"PRESS DETECT!", font=("Arial", 14))
+predict_value = tk.Label(frame, text=f"Draw A Digit!", font=("Arial", 14))
 predict_value.grid(row=0, column=1, padx=20) 
 
 # Binds mouse drag event to the paint function
 canvas.bind("<B1-Motion>", paint)
+canvas.bind("<ButtonRelease-1>", pen_touch)
 
-detect_digit = tk.Button(window, text="DETECT", command=predict_digit)
-detect_digit.pack()
+#detect_digit = tk.Button(window, text="DETECT", command=predict_digit)
+#detect_digit.pack()
 
-clear_button = tk.Button(window, text="Clear", command=clear)
+clear_button = tk.Button(window, text="Clear", command=clear, width=10, height=2)
 clear_button.pack()
 
 # Run the event loop
