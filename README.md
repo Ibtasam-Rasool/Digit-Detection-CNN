@@ -11,7 +11,7 @@ To run create a python virtual enviornment with all dependacies:
 
 # Run Application
 1. run DigitDetectApp.py
-2. use mouse on black canvas to draw a digit and press detect for a digit detection 0-9
+2. use mouse on black canvas to draw a digit and it will auto detect a digit from 0-9
 3. press clear to clean canvas to write another digit
 
 # Train your own model
@@ -27,4 +27,4 @@ To run create a python virtual enviornment with all dependacies:
 9. do steps in "Run Application"
 
 # Demo Vid!
-https://youtu.be/lZAf13rlaac
+https://youtu.be/lZDBg1UYsLQ
