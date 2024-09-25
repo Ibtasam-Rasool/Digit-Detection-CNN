@@ -4,7 +4,7 @@ Convolutional neural network used to detect hand written digits (0-9)
 # Set up
 To run create a python virtual enviornment with all dependacies:
 1. in project folder run the command pip install virtualenv (to install venv) and then
-2. python -m venv <virtual-environment-name> 
+2. python -m venv virtual-environment-name 
 3. go to scripts folder in <virtual-environment-name>  folder open bash window and run the command "start activate.bat" should open command terminal with your venv running (can also do activate.bat in terminal)
 4. in terminal go back out project folder level and run the command pip install -r requirements.txt
 5. open vscode and do ctrl + shift + p select your virtual enviornment
